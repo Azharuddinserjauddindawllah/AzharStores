@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZHAR STORES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AZHAR STORES</h1>
+        <button class="cart-btn" onclick="toggleCart()">Cart <span id="cartItemCount">0</span></button>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchProducts()">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product" data-name="Ghee">
+            <input type="hidden" name="product_name[]" value="Ghee">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="Ghee.jpg" alt="Ghee">
+            <h2>Ghee</h2>
+            <p>This ghee is from Annapurna it is good in taste . <a href="#">Read more</a></p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product" data-name="Paneer">
+            <input type="hidden" name="product_name[]" value="Paneer">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="Paneer.jpg" alt="Paneer">
+            <h2>Paneer</h2>
+            <p>This is paneer which can be used to make paneer kofte as it is way more tasty  <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+                <div class="product" data-name="Product 2">
+            <input type="hidden" name="product_name[]" value="Product 2">
+            <input type="hidden" name="quantity[]" value="1">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. <a href="#">Read more</a></p>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity[]" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- Repeat for 13 more products -->
+    </div>
+
+    <div class="cart-container" id="cartContainer" style="display: none;">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItemList"></ul>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        let cartItems = [];
+
+        function addToCart(button) {
+            const product = button.parentElement;
+            const productName = product.querySelector('input[name="product_name[]"]').value;
+            const quantity = parseInt(product.querySelector('input[name="quantity[]"]').value);
+
+            // Check if item already exists in cart
+            const existingItemIndex = cartItems.findIndex(item => item.productName === productName);
+            if (existingItemIndex !== -1) {
+                cartItems[existingItemIndex].quantity += quantity; // Update quantity if already in cart
+            } else {
+                cartItems.push({ productName, quantity }); // Add new item to cart
+            }
+
+            updateCartItemCount();
+        }
+
+        function updateCartItemCount() {
+            const cartItemCount = document.getElementById('cartItemCount');
+            cartItemCount.textContent = cartItems.length;
+        }
+
+        function toggleCart() {
+            const cartContainer = document.getElementById('cartContainer');
+            cartContainer.style.display = cartContainer.style.display === 'none' ? 'block' : 'none';
+            displayCartItems();
+        }
+
+        function displayCartItems() {
+            const cartItemList = document.getElementById('cartItemList');
+            cartItemList.innerHTML = '';
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.productName} - Quantity: ${item.quantity}`;
+                cartItemList.appendChild(li);
+            });
+        }
+
+        function checkout() {
+            const whatsappNumber = '+917002711744';
+            const message = encodeURIComponent(getCartMessage());
+            const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
+            window.location.href = whatsappLink;
+        }
+
+        function getCartMessage() {
+            let message = 'Cart Items:%0A';
+            cartItems.forEach(item => {
+                message += `${item.productName}: ${item.quantity}%0A`;
+            });
+            return message;
+        }
+
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                const productName = product.dataset.name.toLowerCase();
+                if (productName.includes(searchInput)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
